@@ -20,12 +20,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
    return view('home',[
-       "title" => "HOME"
+       "title" => "HOME",
+       "active" => "home"
    ]);
 });
 Route::get('/about', function () {
    return view('about', [
        "title" => "ABOUT",
+       "active" => "about",
        "name" => "azmi romzi hoesaini",
        "email" => "azmiromzihoesaini@gmail.com",
        "image" => "azmi.png"
