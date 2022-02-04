@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
    return view('home',[
-       "title" => "HOME"
+       "title" => "HOME",
+       'active' => 'home'
    ]);
 });
 Route::get('/about', function () {
@@ -28,7 +29,8 @@ Route::get('/about', function () {
        "title" => "ABOUT",
        "name" => "azmi romzi hoesaini",
        "email" => "azmiromzihoesaini@gmail.com",
-       "image" => "azmi.png"
+       "image" => "azmi.png",
+       'active' => 'about'
    ]);
 });
 
