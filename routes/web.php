@@ -21,12 +21,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
    return view('home',[
        "title" => "HOME",
+<<<<<<< HEAD
        'active' => 'home'
+=======
+       "active" => "home"
+>>>>>>> 3a2f2bd32e021249eb67da8246ee1078cd0302b3
    ]);
 });
 Route::get('/about', function () {
    return view('about', [
        "title" => "ABOUT",
+       "active" => "about",
        "name" => "azmi romzi hoesaini",
        "email" => "azmiromzihoesaini@gmail.com",
        "image" => "azmi.png",
